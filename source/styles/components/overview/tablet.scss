@@ -1,0 +1,48 @@
+.overview {
+    height:471px;
+    background-color:#FFFFFF;
+
+    .container{
+        width:687px;
+
+        .grey{
+            display: none;
+        }
+        .article{
+            width:100%;
+            padding-left: 49px;
+
+            &::before{
+                display:none;
+            }
+
+            div {
+
+                p {
+                    padding-right: 34px;
+
+                    &:first-child{
+                        margin-right: 8px;
+                        max-width: 45%;
+                    }
+                    &:last-child{
+                        padding-right: 43px;
+                        line-height: 18px;
+                    }
+                }
+
+            }
+            
+            > p {
+
+                &:first-of-type{
+                    padding-right: 4px;
+                }
+
+                &:last-child {
+                    padding-right: 48px;
+                }
+            }
+        }
+    }
+}

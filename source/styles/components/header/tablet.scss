@@ -1,3 +1,28 @@
-.header {
-    background: green;
+header {
+    width: 100%;
+
+    .row {
+
+        &-1 {
+            .container {
+                width: 687px;
+
+                .intro {
+                    width: 344px;
+                }
+            }
+        }
+
+        &-2 {
+    
+            .container {
+                width: 687px;
+
+
+                &::after {
+                    left: 0px;
+                }
+            }
+        }
+    }
 }
