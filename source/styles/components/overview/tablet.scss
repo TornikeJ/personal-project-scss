@@ -1,0 +1,49 @@
+.overview {
+    height:471px;
+    background-color:#FFFFFF;
+
+    .container{
+        width:687px;
+
+        .grey{
+            display: none;
+        }
+        .article{
+            width:100%;
+            padding-left: 48px;
+            padding-right: 5px;
+
+            &::before{
+                display:none;
+            }
+
+            > p {
+                padding-right: 44px;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 20px;
+
+                &:first-of-type {
+                    margin-bottom: 30px;
+                    padding-right: 0;
+                    font-size: 20px;
+                    line-height: 30px;
+                    text-decoration: underline;
+                    text-decoration-color: #DBDBDB;
+                }
+
+            }
+                            
+            .multicolumn{
+                max-height: 80px;
+                padding-right: 31px;
+                column-count: 2;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 20px;
+                line-height: 20px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

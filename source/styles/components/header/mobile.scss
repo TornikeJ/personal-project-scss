@@ -1,3 +1,126 @@
-.header {
-    background: yellow;
+header {
+    width: 100%;
+
+    a {
+        &.menu{
+            position: absolute;
+            right: -1px;
+            top: 11px;
+        }
+    }
+    .row {
+
+        &-1 {
+            .container {
+                width: 270px;
+
+                .intro {
+                    width: 271px;
+                    padding-top: 13px;
+                    padding-left: 34px;
+
+                    .title {
+                        font-size: 14.45px;
+
+                        &::before {
+                            margin-right: -2px;
+                            margin-bottom: 70px;
+                            padding: 2px 7px;
+                            font-size: 25.85px;
+                            transform: translate(-7px,10px);
+                        }
+                    }
+
+                    > span {
+                        font-size: 10px;
+                    }
+
+                    .wrap {
+                        width: 203px;
+                        margin-bottom: 17px;
+
+                        > h1 {
+                            padding-left: 1px;
+                            letter-spacing: -0.5px;
+                            font-size: 22px;
+                            font-weight: 700;
+                        }
+
+                        > h2 {
+                            padding-left: 1px;
+                            text-transform: uppercase;
+                            letter-spacing: -1px;
+                            font-size: 26px;
+                            font-weight: 700;
+                            margin-bottom: 12.5px;
+                        }
+                        > span {
+                            font-size: 14px;
+                            width: 184px;
+                            line-height: 20.5px;
+                            margin-bottom: 20px;
+                        }
+                        
+                        &:last-of-type{
+                            margin-bottom: 15px;
+                        }
+                    }
+                    .admission {
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        letter-spacing: -0.24px;
+                        word-spacing: 1.6px;
+                        transform: translateY(2px);
+
+                        &::before {
+                            margin-bottom: -5px;
+                        }            
+                    }
+
+                    .icons {
+                        display: flex;
+                        align-self:center;
+                        position: absolute;
+                        bottom:0;
+                        right: 71px;
+
+                    
+                        .seen{
+                            &::before {
+                                content: url(/images/header/eye.png);
+                                display: block;
+                                padding: 13px 11px 8px 10px;
+                                border: 1px solid rgba(255, 255, 255, 0.3);
+                            }
+                        }
+                        .image{
+                            &::before {
+                                content: url(/images/header/image.png);
+                                display: block;
+                                padding: 11px 10px 6px 10px;
+                                border: 1px solid rgba(255, 255, 255, 0.3);
+                            }
+                        }
+                        .location{
+                            &::before {
+                                content: url(/images/header/marker.png);
+                                display: block;
+                                padding: 10px 12px 7px 13px;
+                                border: 1px solid rgba(255, 255, 255, 0.3);
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+
+        &-2 {
+            background-color: #111111;
+
+            .container {
+                display:none;
+            }
+        }
+    }
 }
