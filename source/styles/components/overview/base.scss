@@ -1,9 +1,9 @@
 .overview {
     position: relative;
     width: 100%;
-    height: 524px;
+    height: 522px;
     overflow: hidden;
-    background-color: #DBDBDB;
+    background-color: $color5;
 
     .container {
         display: flex;
@@ -13,10 +13,16 @@
 
         .grey {
             display: flex;
+            position: relative;
             flex-shrink: 0;
+            align-items: center;
             width: 349.83px;
             height: 522px;
-            background-color: #898989;
+            background-color: $color6;
+
+            img {
+                position: absolute;
+            }
         }
 
         .article {
@@ -26,7 +32,7 @@
             height: 100%;
             padding-top: 43px;
             padding-left: 47px;
-            color: #222222;
+            color: $color7;
             font-family: 'Open Sans', sans-serif;
 
             h1 {
@@ -49,31 +55,29 @@
                     font-size: 20px;
                     line-height: 30px;
                     text-decoration: underline;
-                    text-decoration-color: #DBDBDB;
+                    text-decoration-color: $color5;
                 }
-
             }
-                            
-            .multicolumn{
+
+            .multicolumn {
                 max-height: 80px;
+                margin-bottom: 30px;
                 padding-right: 31px;
                 column-count: 2;
                 font-size: 14px;
                 font-weight: 300;
                 line-height: 20px;
-                line-height: 20px;
-                margin-bottom: 30px;
             }
 
-            &::before{
+            &::before {
                 content: '';
                 position: absolute;
+                z-index: -1;
                 top: 0;
                 left: 0;
                 width: 200%;
                 height: 100%;
-                background-color: #FFFFFF;
-                z-index: -1;
+                background-color: $color3;
             }
         }
     }

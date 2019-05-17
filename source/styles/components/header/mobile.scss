@@ -2,15 +2,18 @@ header {
     width: 100%;
 
     a {
-        &.menu{
+
+        &.menu {
             position: absolute;
-            right: -1px;
             top: 11px;
+            right: -1px;
         }
     }
+
     .row {
 
         &-1 {
+
             .container {
                 width: 270px;
 
@@ -20,14 +23,14 @@ header {
                     padding-left: 34px;
 
                     .title {
+                        margin-bottom: 70px;
                         font-size: 14.45px;
 
                         &::before {
                             margin-right: -2px;
-                            margin-bottom: 70px;
                             padding: 2px 7px;
+                            transform: translate(-7px, 10px);
                             font-size: 25.85px;
-                            transform: translate(-7px,10px);
                         }
                     }
 
@@ -41,85 +44,61 @@ header {
 
                         > h1 {
                             padding-left: 1px;
-                            letter-spacing: -0.5px;
                             font-size: 22px;
                             font-weight: 700;
+                            letter-spacing: -.5px;
                         }
 
                         > h2 {
+                            margin-bottom: 12.5px;
                             padding-left: 1px;
-                            text-transform: uppercase;
-                            letter-spacing: -1px;
                             font-size: 26px;
                             font-weight: 700;
-                            margin-bottom: 12.5px;
+                            letter-spacing: -1px;
+                            text-transform: uppercase;
                         }
+
                         > span {
-                            font-size: 14px;
                             width: 184px;
-                            line-height: 20.5px;
                             margin-bottom: 20px;
+                            font-size: 14px;
+                            line-height: 20.5px;
                         }
-                        
-                        &:last-of-type{
+
+                        &:last-of-type {
                             margin-bottom: 15px;
                         }
                     }
+
                     .admission {
-                        font-size: 16px;
-                        text-transform: uppercase;
-                        letter-spacing: -0.24px;
-                        word-spacing: 1.6px;
                         transform: translateY(2px);
+                        font-size: 16px;
+                        letter-spacing: -.24px;
+                        text-transform: uppercase;
+                        word-spacing: 1.6px;
 
                         &::before {
                             margin-bottom: -5px;
-                        }            
+                        }
                     }
 
                     .icons {
                         display: flex;
-                        align-self:center;
                         position: absolute;
-                        bottom:0;
                         right: 71px;
-
-                    
-                        .seen{
-                            &::before {
-                                content: url(/images/header/eye.png);
-                                display: block;
-                                padding: 13px 11px 8px 10px;
-                                border: 1px solid rgba(255, 255, 255, 0.3);
-                            }
-                        }
-                        .image{
-                            &::before {
-                                content: url(/images/header/image.png);
-                                display: block;
-                                padding: 11px 10px 6px 10px;
-                                border: 1px solid rgba(255, 255, 255, 0.3);
-                            }
-                        }
-                        .location{
-                            &::before {
-                                content: url(/images/header/marker.png);
-                                display: block;
-                                padding: 10px 12px 7px 13px;
-                                border: 1px solid rgba(255, 255, 255, 0.3);
-                            }
-                        }
+                        bottom: 0;
+                        align-self: center;
                     }
-                    
                 }
             }
         }
 
         &-2 {
-            background-color: #111111;
+            height: 62px;
+            background-color: $color1;
 
             .container {
-                display:none;
+                display: none;
             }
         }
     }
