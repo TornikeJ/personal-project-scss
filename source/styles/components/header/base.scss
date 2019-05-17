@@ -3,7 +3,6 @@ header {
     background-color: #EEEEEE;
     font-family: 'Montserrat', sans-serif;
 
-  
     a {
         color: #FFFFFF;
         text-decoration: none;
@@ -12,7 +11,7 @@ header {
             padding: 29.5px 31.5px;
             float: left;
             background-color: #111111;
-            background-image:url(/images/header/Burger.png);
+            background-image: url(/images/header/Burger.png);
             background-repeat: no-repeat;
             background-position: 50%;
         }
@@ -27,48 +26,48 @@ header {
             justify-content: center;
             height: 422px;
             overflow: hidden;
-            
+
             img {
                 position: absolute;
             }
 
             .container {
                 position: absolute;
+                top: 0;
                 width: 1002px;
                 height: 100%;
-                top: 0;
 
                 .intro {
+                    display: flex;
                     position: relative;
-                    display:flex;
                     flex-direction: column;
                     width: 350px;
                     height: 100%;
                     padding-top: 13px;
                     padding-left: 34px;
                     float: left;
+                    opacity: .97;
                     background-color: #ED1C24;
                     color: #FFFFFF;
-                    opacity: 0.97;
 
                     .title {
                         font-size: 18px;
                         font-weight: 700;
-                        text-decoration: none; 
+                        letter-spacing: -.4px;
+                        text-decoration: none;
                         text-transform: uppercase;
-                        letter-spacing: -0.4px;
 
                         &::before {
                             content: 'E';
-                            display:inline-block;
+                            display: inline-block;
                             margin-right: 8px;
                             margin-bottom: 61px;
                             padding: 3px 8px;
+                            transform: translateY(14px);
                             border: 3px solid #FFFFFF;
                             color: #FFFFFF;
                             font-size: 32.21px;
                             font-weight: 700;
-                            transform: translateY(14px);
                         }
                     }
 
@@ -77,136 +76,142 @@ header {
                         width: max-content;
                         margin-bottom: 9px;
                         padding: 4px 9px;
-                        font-size: 10px;
-                        color: #FFFFFF;
                         background-color: #111111;
+                        color: #FFFFFF;
+                        font-size: 10px;
                         text-transform: uppercase;
                     }
 
                     .wrap {
-                        border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
-                        margin-bottom: 18.5px;
                         width: 279px;
+                        margin-bottom: 18.5px;
+                        border-bottom: 1px solid rgba(255, 255, 255, .3);
 
                         > h1 {
                             padding-left: 1px;
-                            letter-spacing: -0.5px;
                             font-size: 22px;
                             font-weight: 700;
+                            letter-spacing: -.5px;
                         }
 
                         > h2 {
+                            margin-bottom: 12.5px;
                             padding-left: 1px;
-                            text-transform: uppercase;
-                            letter-spacing: -1px;
                             font-size: 26px;
                             font-weight: 700;
-                            margin-bottom: 12.5px;
+                            letter-spacing: -1px;
+                            text-transform: uppercase;
                         }
+
                         > span {
+                            display: block;
+                            width: 212px;
+                            margin-bottom: 21px;
                             font-family: 'Open Sans', sans-serif;
                             font-size: 16px;
                             font-weight: 300;
-                            display: block;
-                            width: 212px;
                             line-height: 19.5px;
-                            margin-bottom: 21px;
                         }
-                        
-                        &:last-of-type{
+
+                        &:last-of-type {
                             margin-bottom: 15px;
                         }
                     }
+
                     .admission {
                         font-size: 18px;
+                        letter-spacing: -.24px;
                         text-transform: uppercase;
-                        letter-spacing: -0.24px;
                         word-spacing: 1.6px;
 
                         &::before {
                             content: '';
                             display: inline-block;
-                            background-image: url(/images/header/Arrow.png);
-                            background-size: cover;
-                            background-repeat: no-repeat;
+                            margin-right: 9px;
                             margin-bottom: -4px;
                             padding: 10px 10px;
-                            margin-right: 9px;
-                            transform: translateY(0px);
-                        }            
+                            background-image: url(/images/header/Arrow.png);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
                     }
 
                     .icons {
                         display: flex;
-                        align-self: flex-end;
                         position: absolute;
-                        bottom:0;
-                        right:0;
+                        right: 0;
+                        bottom: 0;
+                        align-self: flex-end;
 
-                    
-                        .seen{
+                        .seen {
+
                             &::before {
                                 content: url(/images/header/eye.png);
                                 display: block;
                                 padding: 13px 11px 8px 10px;
-                                border: 1px solid rgba(255, 255, 255, 0.3);
+                                border: 1px solid rgba(255, 255, 255, .3);
                             }
                         }
-                        .image{
+
+                        .image {
+
                             &::before {
                                 content: url(/images/header/image.png);
                                 display: block;
                                 padding: 11px 10px 6px 10px;
-                                border: 1px solid rgba(255, 255, 255, 0.3);
+                                border: 1px solid rgba(255, 255, 255, .3);
                             }
                         }
-                        .location{
+
+                        .location {
+
                             &::before {
                                 content: url(/images/header/marker.png);
                                 display: block;
                                 padding: 10px 12px 7px 13px;
-                                border: 1px solid rgba(255, 255, 255, 0.3);
+                                border: 1px solid rgba(255, 255, 255, .3);
                             }
                         }
                     }
-                    
                 }
             }
         }
 
         &-2 {
             display: flex;
+            align-self: flex-end;
             justify-content: center;
-            align-self:flex-end;
             width: 100%;
             height: 62px;
             overflow: hidden;
             background-color: #DBDBDB;
-    
+
             .container {
                 display: flex;
                 position: relative;
                 justify-content: flex-end;
                 width: 1002px;
-                
+
                 .arrows {
+                    display: flex;
                     z-index: 1;
                     align-items: center;
-                    display: flex;
-                    border-right: 1px solid rgba(255, 255, 255, 0.3);
-                    border-left: 1px solid rgba(255, 255, 255, 0.3);
-                    
+                    border-right: 1px solid rgba(255, 255, 255, .3);
+                    border-left: 1px solid rgba(255, 255, 255, .3);
+
                     a {
-                        margin-right: 0.5px;
+                        margin-right: .5px;
                         padding: 21px 21px;
-                        
-                        &.left{
-                            border-right: 1px solid rgba(255, 255, 255, 0.3);
+
+                        &.left {
+                            border-right: 1px solid rgba(255, 255, 255, .3);
                         }
-                        &.left::before{
+
+                        &.left::before {
                             content: url(/images/header/Left.png);
                         }
-                        &.right::before{
+
+                        &.right::before {
                             content: url(/images/header/Right.png);
                         }
                     }

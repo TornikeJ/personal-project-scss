@@ -1,20 +1,21 @@
 .overview {
-    height:471px;
-    background-color:#FFFFFF;
+    height: 471px;
+    background-color: #FFFFFF;
 
-    .container{
-        width:687px;
+    .container {
+        width: 687px;
 
-        .grey{
+        .grey {
             display: none;
         }
-        .article{
-            width:100%;
-            padding-left: 48px;
-            padding-right: 5px;
 
-            &::before{
-                display:none;
+        .article {
+            width: 100%;
+            padding-right: 5px;
+            padding-left: 48px;
+
+            &::before {
+                display: none;
             }
 
             > p {
@@ -31,18 +32,16 @@
                     text-decoration: underline;
                     text-decoration-color: #DBDBDB;
                 }
-
             }
-                            
-            .multicolumn{
+
+            .multicolumn {
                 max-height: 80px;
+                margin-bottom: 30px;
                 padding-right: 31px;
                 column-count: 2;
                 font-size: 14px;
                 font-weight: 300;
                 line-height: 20px;
-                line-height: 20px;
-                margin-bottom: 30px;
             }
         }
     }

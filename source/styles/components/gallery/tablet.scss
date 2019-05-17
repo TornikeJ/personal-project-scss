@@ -3,13 +3,13 @@
     height: 572px;
     background-color: #111111;
 
-    .container{
-        position:relative;
-        width:678px;
-        height:100%;
+    .container {
+        position: relative;
+        width: 678px;
+        height: 100%;
         margin: 0 auto;
 
-        h1{
+        h1 {
             top: 44px;
             left: 41px;
         }
@@ -22,32 +22,33 @@
             padding-top: 99px;
             padding-left: 45px;
 
-            .box{
+            .box {
+                flex-shrink: 0;
                 width: 590.82px;
                 height: 295.76px;
-                background-color:#FFFFFF;
-                flex-shrink:0;
+                background-color: #FFFFFF;
             }
+
             .collection {
                 display: Grid;
+                grid-column-gap: 14px;
                 grid-template-columns: repeat(5, 1fr);
                 grid-template-rows: 1fr;
-                grid-column-gap: 14px;
                 padding-top: 24px;
                 padding-left: 0;
 
-                div{
+                div {
                     width: 107.02px;
                     height: 100.9px;
                     background-color: #FFFFFF;
                 }
 
-                div:hover{
+                div:hover {
                     border-color: #ED1C24;
                 }
 
-                .removable{
-                    display:none;
+                .removable {
+                    display: none;
                 }
             }
         }
